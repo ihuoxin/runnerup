@@ -5,6 +5,7 @@ def getGitHash = providers.exec {
 }.standardOutput.asText.get().strip()
 
 android {
+    compileSdk 34  // 添加这一行，直接指定 compileSdk
     buildToolsVersion = rootProject.ext.buildToolsVersion
     namespace = 'org.runnerup'
 
@@ -47,7 +48,7 @@ android {
             dimension = "all"
             // multidexing support, min play support
             minSdk = rootProject.ext.minSdk
-            compileSdk = rootProject.ext.compileSdk
+            //compileSdk = rootProject.ext.compileSdk
             targetSdk = rootProject.ext.targetSdk
             versionName = rootProject.ext.versionName
             versionCode = rootProject.ext.latestBaseVersionCode + rootProject.ext.versionCode
