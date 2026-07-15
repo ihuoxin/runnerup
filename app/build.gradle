@@ -47,7 +47,7 @@ android {
             dimension = "all"
             // multidexing support, min play support
             minSdk = rootProject.ext.minSdk
-            //compileSdk = rootProject.ext.compileSdk
+            compileSdk = rootProject.ext.compileSdk
             targetSdk = rootProject.ext.targetSdk
             versionName = rootProject.ext.versionName
             versionCode = rootProject.ext.latestBaseVersionCode + rootProject.ext.versionCode
