@@ -5,11 +5,15 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:9.2.1'
+        // 新增：引入 Kotlin 2.4.0 插件
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:2.4.0"
     }
 }
 
 plugins {
     id "com.diffplug.spotless" version "8.6.0"
+    // 新增：应用 Kotlin Android 插件
+    id "org.jetbrains.kotlin.android" version "2.4.0" apply false
 }
 
 repositories {
