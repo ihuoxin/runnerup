@@ -6,6 +6,7 @@ def getGitHash = providers.exec {
 }.standardOutput.asText.get().strip()
 
 android {
+    compileSdk 34
     buildToolsVersion = rootProject.ext.buildToolsVersion
     namespace = 'org.runnerup'
 
